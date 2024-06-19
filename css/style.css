@@ -3175,10 +3175,11 @@ button:focus {
 
 .btns-wrap .btn-1 {
   font-size: 24px;
+  font-family: "Assistant", "Arial", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20px 30px;
-  width: 160px;
+  width: 188px;
   font-weight: 600;
   color: #1f1748;
   background-color: transparent;
