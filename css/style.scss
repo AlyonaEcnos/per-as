@@ -1,7 +1,9 @@
 $bgcolor0: #ffffff;
 $bgcolor1: #1b2c64;
+$bgcolor2: purple;
 $accentColor: #5f7fec;
 $textColor0: #000000;
+$textColor2: purple;
 $hoverdColor: #5f7fec;
 
 $txt-wite: #fff;
@@ -218,6 +220,7 @@ img {
 }
 
 .images-assistant {
+  width: 570px;
   @media (max-width: 1279px) {
     width: 200px;
   }
@@ -929,6 +932,41 @@ header {
   }
 }
 
+.section-table {
+  background-color: $bgcolor1;
+  background-image: url(../images/section-welcome.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1279px) {
+    background-position: left;
+  }
+
+  .section-wrap {
+    width: 100%;
+    @media (max-width: 1279px) {
+      flex-direction: column-reverse;
+    }
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .cont-wrap {
+    min-width: 500px;
+    @media (max-width: 800px) {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+}
+
 .section-abouts {
   background-color: $bgcolor1;
   background-image: url(../images/about-s.jpg);
@@ -954,3 +992,150 @@ header {
     }
   }
 }
+
+/* table-wrapper */
+.table-wrapper {
+  height: 433px;
+  display: grid;
+  overflow-y: scroll;
+  flex-grow: 1;
+  direction: ltr;
+  position: relative;
+
+  &::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+    border-radius: 30px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    background-clip: padding-box;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $bgcolor2;
+    border: 1px solid #aaaaaa;
+    border-radius: 30px;
+  }
+  table {
+    border-collapse: collapse;
+    background-color: #000;
+    width: 100%;
+    tr {
+      td,
+      th {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 200;
+        text-align: left;
+        max-width: 270px;
+
+        @media (max-width: 980px) {
+          max-width: inherit;
+        }
+      }
+    }
+    thead {
+      position: relative;
+      z-index: 5;
+      tr {
+        th {
+          position: sticky;
+          top: 0;
+          z-index: 2;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 400;
+          padding: 14px 15px 14px 15px;
+          transition: all 1s ease;
+          white-space: nowrap;
+          background: #000;
+
+          &:first-child {
+            padding-right: 17px;
+            border-radius: 25px 0px 0px 25px;
+          }
+
+          &:last-child {
+            border-radius: 0px 25px 25px 0px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #d7d7d7;
+        &:nth-child(odd) {
+          background: #1c1a1a;
+        }
+
+        &:hover,
+        &:focus {
+          opacity: 0.8;
+        }
+        td {
+          padding: 16px 15px 16px 15px;
+
+          .td-inner {
+            @media (max-width: 980px) {
+              width: 50%;
+            }
+          }
+
+          &:first-child {
+            padding-right: 17px;
+            @media (max-width: 980px) {
+              padding-right: 8px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 200;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .table-wrapper {
+    height: 400px;
+  }
+
+  .table-wrapper thead {
+    display: none;
+  }
+
+  .table-wrapper table tbody tr {
+    display: block;
+    padding: 10px 0px;
+    height: auto;
+    border-radius: 12px;
+    border-bottom: 0px solid #d7d7d7;
+    &:nth-child(odd) {
+      background: #f2f4f5;
+    }
+  }
+
+  .table-wrapper table tbody tr td {
+    padding: 6px 8px 6px 0px;
+    display: flex;
+  }
+
+  .table-wrapper tbody tr td:before {
+    content: attr(data-th) ": ";
+    display: inline-block;
+    font-weight: 400;
+    color: $bgcolor2;
+    width: 50%;
+    padding-right: 5px;
+  }
+}
+/* end table-wrapper */
