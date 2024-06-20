@@ -3877,6 +3877,10 @@ header.floating {
   }
 }
 
+.section-register.add-new-contact {
+  background-image: url(../images/section-welcome.jpg);
+}
+
 .section-table {
   background-color: #1b2c64;
   background-image: url(../images/section-welcome.jpg);
