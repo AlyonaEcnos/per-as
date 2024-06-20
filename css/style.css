@@ -3207,6 +3207,13 @@ button:focus {
   opacity: 0.8;
 }
 
+.btns-wrap .btn-1.btn-2 {
+  width: auto;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 15px;
+}
+
 .table-btns-wrap .table-btn {
   display: block;
   width: 40px;
@@ -3275,6 +3282,12 @@ button:focus {
   background-color: #ffffff;
   color: #1b2c64;
   font-family: inherit;
+}
+
+.form-stile1 .container .form-item input:hover, .form-stile1 .container .form-item input:focus,
+.form-stile1 .container .form-item select:hover,
+.form-stile1 .container .form-item select:focus {
+  background-color: #adbdf5;
 }
 
 .form-stile1 .container .btns-wrap {
@@ -3457,6 +3470,100 @@ img {
 
 .serch-row.pb40 {
   padding-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .serch-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .serch-row .search-container {
+    padding-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.serch-row .search-container form input,
+.serch-row .search-container form select {
+  box-sizing: border-box;
+  padding-right: 6px;
+  padding-left: 6px;
+  height: 40px;
+  min-width: 400px;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #1b2c64;
+  font-family: inherit;
+}
+
+@media (max-width: 1024px) {
+  .serch-row .search-container form input,
+  .serch-row .search-container form select {
+    min-width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.serch-row .search-container form input:hover, .serch-row .search-container form input:focus,
+.serch-row .search-container form select:hover,
+.serch-row .search-container form select:focus {
+  background-color: #adbdf5;
+}
+
+.serch-row .search-container form button {
+  margin-left: -4px;
+  box-sizing: border-box;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #2f4891;
+  font-family: inherit;
+}
+
+@media (max-width: 1024px) {
+  .serch-row .search-container form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.serch-row .search-container form button:hover, .serch-row .search-container form button:focus {
+  background-color: #adbdf5;
+}
+
+.serch-row .btns-wrap {
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .serch-row .btns-wrap {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .serch-row .btns-wrap .btn-2 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .serch-row .btns-wrap .btn-2:first-child {
+    margin-bottom: 15px;
+  }
 }
 
 header {
