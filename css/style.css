@@ -3455,6 +3455,10 @@ img {
   transition: all 0.3s ease-in;
 }
 
+.serch-row.pb40 {
+  padding-bottom: 40px;
+}
+
 header {
   min-height: 78px;
   background-color: #40afff;
@@ -3573,7 +3577,9 @@ header .header-wrap .menu nav ul li button {
 header .header-wrap .menu nav ul li a:hover, header .header-wrap .menu nav ul li a:focus,
 header .header-wrap .menu nav ul li button:hover,
 header .header-wrap .menu nav ul li button:focus {
-  color: #5a57a6;
+  color: #94aaf3;
+  background: #fff;
+  border-radius: 30px;
 }
 
 header.floating {
@@ -3836,7 +3842,7 @@ header.floating {
 
 /* table-wrapper */
 .table-wrapper {
-  height: 433px;
+  height: 417px;
   display: grid;
   overflow-y: scroll;
   flex-grow: 1;

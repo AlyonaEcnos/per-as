@@ -1,15 +1,13 @@
 $bgcolor0: #ffffff;
 $bgcolor1: #1b2c64;
 $bgcolor2: #2f4891;
-$accentColor: #5f7fec;
+$accentColor: #40afff;
 $textColor0: #000000;
-$textColor2: purple;
 $hoverdColor: #5f7fec;
 
 $txt-wite: #fff;
 
 $p-blue: #5f7fec;
-$p-yellow: #efc41a;
 $p-purple: #5a57a6;
 
 @import "_fontStyle.scss";
@@ -369,6 +367,12 @@ img {
   }
 }
 
+.serch-row {
+  &.pb40 {
+    padding-bottom: 40px;
+  }
+}
+
 //header
 header {
   min-height: 78px;
@@ -476,7 +480,9 @@ header {
               }
               &:hover,
               &:focus {
-                color: $p-purple;
+                color: #94aaf3;
+                background: #fff;
+                border-radius: 30px;
               }
             }
           }
@@ -708,7 +714,7 @@ header {
 
 /* table-wrapper */
 .table-wrapper {
-  height: 433px;
+  height: 417px;
   display: grid;
   overflow-y: scroll;
   flex-grow: 1;
