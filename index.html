@@ -26,9 +26,58 @@
       <div id="status"></div>
     </div>
     <header class="floatingHeader">
-      <div class="section-wrap header-wrap header-wrap-login">
+      <div class="section-wrap display-flex header-wrap">
         <div class="logo">
           <h1><img src="./images/logo.png" alt="Personal Assistants" /></h1>
+        </div>
+        <div class="menu">
+          <input class="switcher" type="checkbox" id="menu" />
+          <label class="open" for="menu">
+            <i class="fa fa-bars"></i>
+          </label>
+
+          <label class="close" for="menu">
+            <i class="fa fa-times"></i>
+          </label>
+          <nav>
+            <ul class="display-flex">
+              <li class="nav-li menu-link">
+                <a href="" class="btn-2" target="_blank">
+                  <span>sign up</span>
+                </a>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>log in</span>
+                </button>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>log out</span>
+                </button>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>contact</span>
+                </button>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>files</span>
+                </button>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>news</span>
+                </button>
+              </li>
+              <li class="nav-li menu-link">
+                <button type="button" class="btn-2">
+                  <span>notes</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -38,12 +87,12 @@
       <section id="welcome" class="section section-welcome">
         <div class="section-wrap display-flex">
           <img
-            src="./images/assistant.png"
-            class="images-assistant"
-            alt="assistant"
+            src="./images/r1.webp"
+            class="images-assistant mr"
+            alt=""
           />
           <div class="cont-wrap">
-            <h2>Welcome to Your Personal Assistant!</h2>
+            <h2>Welcome to Your <br />Personal Assistant!</h2>
             <div class="btns-wrap">
               <a href="" class="btn-1" target="_blank">
                 <span>sign up</span>
@@ -65,8 +114,7 @@
       <section id="about" class="section section-abouts">
         <div class="section-wrap display-flex">
           <div class="cont-wrap">
-            <h2>ABOUT</h2>
-            <h3>What I can do:</h3>
+            <h2>What I can do:</h2>
             <ul>
               <li>
                 Save contacts with names, addresses, phone numbers, email and
