@@ -3836,6 +3836,12 @@ header.floating {
   }
 }
 
+@media (max-width: 1279px) {
+  .section-welcome.section-logout .section-wrap {
+    flex-direction: column-reverse;
+  }
+}
+
 .section-register {
   background-color: #1b2c64;
   background-image: url(../images/section-register.jpg);
@@ -3924,6 +3930,10 @@ header.floating {
     min-width: unset;
     width: 100%;
   }
+}
+
+.section-table.section-notes {
+  background-image: url(../images/section-notes.jpg);
 }
 
 .section-abouts {

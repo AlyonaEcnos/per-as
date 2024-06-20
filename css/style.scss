@@ -709,6 +709,14 @@ header {
       }
     }
   }
+
+  &.section-logout {
+    .section-wrap {
+      @media (max-width: 1279px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
 }
 
 .section-register {
@@ -743,7 +751,7 @@ header {
     }
   }
 
-  &.add-new-contact{
+  &.add-new-contact {
     background-image: url(../images/section-welcome.jpg);
   }
 }
@@ -779,6 +787,10 @@ header {
       min-width: unset;
       width: 100%;
     }
+  }
+
+  &.section-notes {
+    background-image: url(../images/section-notes.jpg);
   }
 }
 
