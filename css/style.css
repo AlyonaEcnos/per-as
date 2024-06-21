@@ -3214,6 +3214,10 @@ button:focus {
   padding: 10px 15px;
 }
 
+.btns-wrap .btn-1.width-auto {
+  width: auto;
+}
+
 .table-btns-wrap .table-btn {
   display: block;
   width: 40px;
@@ -3409,17 +3413,17 @@ img {
 }
 
 #status {
-  width: 300px;
-  height: 300px;
+  width: 221px;
+  height: 350px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url(../images/assistant.png);
+  background-image: url(../images/r5.webp);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 300px;
+  background-size: 221px;
   margin: auto;
 }
 
@@ -3885,6 +3889,10 @@ header.floating {
 
 .section-register.add-new-contact {
   background-image: url(../images/section-welcome.jpg);
+}
+
+.section-register.add-new-notes {
+  background-image: url(../images/section-notes.jpg);
 }
 
 .section-table {
