@@ -3521,7 +3521,7 @@ img {
   font-family: inherit;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .serch-row .search-container form input,
   .serch-row .search-container form select {
     min-width: 300px;
@@ -3936,9 +3936,7 @@ header.floating {
   background-position: center;
   background-size: cover;
   min-height: calc(100vh - 80px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 150px;
 }
 
 @media (max-width: 1279px) {
@@ -3947,8 +3945,16 @@ header.floating {
   }
 }
 
-.section-table .section-wrap {
-  width: 100%;
+@media (max-width: 1024px) {
+  .section-table {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .section-table .section-wrap {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -4005,7 +4011,7 @@ header.floating {
 
 /* table-wrapper */
 .table-wrapper {
-  height: 417px;
+  max-height: 417px;
   display: grid;
   overflow-y: scroll;
   flex-grow: 1;

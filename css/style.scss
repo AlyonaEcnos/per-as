@@ -423,7 +423,7 @@ img {
         color: #1b2c64;
         font-family: inherit;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1280px) {
           min-width: 300px;
         }
 
@@ -799,16 +799,20 @@ header {
   background-position: center;
   background-size: cover;
   min-height: calc(100vh - 80px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 150px;
 
   @media (max-width: 1279px) {
     background-position: left;
   }
 
+  @media (max-width: 1024px) {
+    padding-top: 40px;
+  }
+
   .section-wrap {
-    width: 100%;
+    @media (max-width: 1440px) {
+      width: 90%;
+    }
     @media (max-width: 1279px) {
       flex-direction: column-reverse;
     }
@@ -859,7 +863,7 @@ header {
 
 /* table-wrapper */
 .table-wrapper {
-  height: 417px;
+  max-height: 417px;
   display: grid;
   overflow-y: scroll;
   flex-grow: 1;
