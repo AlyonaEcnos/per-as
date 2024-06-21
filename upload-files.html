@@ -84,75 +84,47 @@
     </header>
 
     <main>
-      <!-- add-new-notes --->
-      <section id="register" class="section section-register add-new-notes">
+      <!-- upload-files --->
+      <section id="register" class="section section-register upload-files">
         <div class="section-wrap display-flex">
           <div class="cont-wrap">
             <div class="form-stile1 mr50">
               <form id="loginForm" name="loginForm" role="form">
-                <legend>add new notes</legend>
+                <legend>upload files</legend>
                 <div class="container">
                   <div class="form-item display-flex">
-                    <label for="title">Notes Title</label>
+                    <label for="uname">Username</label>
                     <input
-                      id="title"
-                      name="title"
+                      id="uname"
+                      name="uname"
                       type="text"
-                      placeholder="Enter Title"
+                      placeholder="Enter Username"
                       required
                     />
                   </div>
                   <div class="form-item display-flex">
-                    <label for="test">Choose :</label>
-                    <select name="test" id="test" form="test">
-                      <option value="a">a</option>
-                      <option value="b">b</option>
-                      <option value="c">c</option>
-                      <option value="d">d</option>
-                    </select>
-                  </div>
-                  <div class="form-item display-flex">
-                    <label for="note-tags">Tags</label>
-                    <select
-                      id="note-tags"
-                      name="tags"
-                      multiple
-                      class="chosen-select"
-                    >
-                      <option value="work">Work</option>
-                      <option value="personal">Personal</option>
-                      <option value="important">Important</option>
-                    </select>
-                  </div>
-                  <div class="form-item display-flex">
-                    <label for="new-tag">New Tag</label>
+                    <label for="psw">Password</label>
                     <input
-                      type="text"
-                      id="new-tag"
-                      placeholder="Enter new tag"
+                      id="psw"
+                      name="psw"
+                      type="password"
+                      placeholder="Enter Password"
+                      required=""
                     />
-                  </div>
-                  <div class="form-item display-flex">
-                    <label for="description">Description</label>
-                    <textarea
-                      name="description"
-                      form="usrform"
-                      placeholder="Enter Description..."
-                    ></textarea>
                   </div>
                   <div class="btns-wrap">
                     <!-- <a href="" class="btn-1" target="_blank">
                   <span>sign in</span>
                 </a> -->
-                    <button type="button" class="btn-1 width-auto">
-                      <span>ADD NEW NOTES</span>
+                    <button type="button" class="btn-1">
+                      <span>upload files</span>
                     </button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <img src="./images/r8.webp" class="images-assistant" alt="" />
+          <img src="./images/r12.webp" class="images-assistant" alt="" />
         </div>
       </section>
     </main>
@@ -164,49 +136,5 @@
 
     <script src="./scripts/jquery-3.3.1.min.js"></script>
     <script src="./scripts/main.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Initialize the chosen plugin for the tags select box
-        $(".chosen-select").chosen();
-
-        // Handle the form submission
-        $("#note-form").on("submit", function (event) {
-          event.preventDefault();
-
-          // Get the form data
-          const title = $("#note-title").val();
-          let tags = $("#note-tags").val();
-          const newTag = $("#new-tag").val();
-          const description = $("#note-description").val();
-
-          // If there's a new tag, add it to the tags array
-          if (newTag) {
-            tags.push(newTag);
-
-            // Add the new tag to the select box and refresh chosen
-            $("#note-tags").append(
-              `<option value="${newTag}" selected>${newTag}</option>`
-            );
-            $("#note-tags").trigger("chosen:updated");
-          }
-
-          // Create the note object
-          const note = {
-            title: title,
-            tags: tags,
-            description: description,
-          };
-
-          // For demonstration purposes, log the note object to the console
-          console.log(note);
-
-          // Reset the form
-          this.reset();
-          $(".chosen-select").val("").trigger("chosen:updated");
-        });
-      });
-    </script>
   </body>
 </html>
