@@ -3132,6 +3132,10 @@ body {
   outline: 0px solid #000;
 }
 
+*:not([class*="fa-"]) {
+  font-family: "Assistant", "Arial", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #000000;
