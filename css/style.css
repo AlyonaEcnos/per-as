@@ -3112,13 +3112,13 @@
 }
 
 html {
-  font-family: "Assistant", "Arial", sans-serif;
+  font-family: "Assistant", "Arial", sans-serif !important;
   line-height: 1.15;
   direction: ltr;
 }
 
 body {
-  font-family: "Assistant", "Arial", sans-serif;
+  font-family: "Assistant", "Arial", sans-serif !important;
   margin: 0;
   padding: 0;
   color: #fff;
