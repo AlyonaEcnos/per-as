@@ -3112,13 +3112,13 @@
 }
 
 html {
-  font-family: "Assistant", "Arial", sans-serif !important;
+  font-family: "Assistant", "Arial", sans-serif;
   line-height: 1.15;
   direction: ltr;
 }
 
 body {
-  font-family: "Assistant", "Arial", sans-serif !important;
+  font-family: "Assistant", "Arial", sans-serif;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -3132,14 +3132,9 @@ body {
   outline: 0px solid #000;
 }
 
-*:not([class*="fa-"]) {
-  font-family: "Assistant", "Arial", sans-serif;
-}
-
 a {
   text-decoration: none;
   color: #000000;
-  font-family: "Assistant", "Arial", sans-serif;
 }
 
 a:hover {
@@ -3148,10 +3143,6 @@ a:hover {
 
 a:focus {
   color: #000000;
-}
-
-a span {
-  font-family: "Assistant", "Arial", sans-serif;
 }
 
 a,
@@ -3264,7 +3255,6 @@ button:focus {
 .btns-wrap .btn-1 {
   font-size: 24px;
   line-height: 24px;
-  font-family: "Assistant", "Arial", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 20px 30px;
@@ -3307,14 +3297,19 @@ button:focus {
 
 .btns-wrap .btn-1.btn-2 {
   width: auto;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 20px;
   padding: 10px 15px;
+}
+
+.btns-wrap .btn-1.btn-2.upcoming-birthday {
+  margin-right: 0;
 }
 
 @media (max-width: 1360px) {
   .btns-wrap .btn-1.btn-2 {
     padding: 10px 5px;
+    font-size: 18px;
   }
 }
 

@@ -14,13 +14,13 @@ $p-purple: #5a57a6;
 @import "_font-awesome.scss";
 
 html {
-  font-family: "Assistant", "Arial", sans-serif !important;
+  font-family: "Assistant", "Arial", sans-serif;
   line-height: 1.15;
   direction: ltr;
 }
 
 body {
-  font-family: "Assistant", "Arial", sans-serif !important;
+  font-family: "Assistant", "Arial", sans-serif;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -46,14 +46,9 @@ body {
   outline: 0px solid #000;
 }
 
-*:not([class*="fa-"]) {
-  font-family: "Assistant", "Arial", sans-serif;
-}
-
 a {
   text-decoration: none;
   color: #000000;
-  font-family: "Assistant", "Arial", sans-serif;
 
   &:hover {
     color: #042c7b;
@@ -61,9 +56,6 @@ a {
 
   &:focus {
     color: #000000;
-  }
-  span {
-    font-family: "Assistant", "Arial", sans-serif;
   }
 }
 
@@ -169,7 +161,6 @@ button {
   .btn-1 {
     font-size: 24px;
     line-height: 24px;
-    font-family: "Assistant", "Arial", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 20px 30px;
@@ -206,12 +197,17 @@ button {
 
     &.btn-2 {
       width: auto;
-      font-size: 20px;
+      font-size: 19px;
       line-height: 20px;
       padding: 10px 15px;
 
+      &.upcoming-birthday {
+        margin-right: 0;
+      }
+
       @media (max-width: 1360px) {
         padding: 10px 5px;
+        font-size: 18px;
       }
 
       @media (max-width: 1200px) {
