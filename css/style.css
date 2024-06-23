@@ -3135,6 +3135,7 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+  font-family: "Assistant", "Arial", sans-serif;
 }
 
 a:hover {
@@ -3145,6 +3146,10 @@ a:focus {
   color: #000000;
 }
 
+a span {
+  font-family: "Assistant", "Arial", sans-serif;
+}
+
 a,
 button,
 input,
@@ -3152,6 +3157,7 @@ select,
 textarea,
 label {
   transition: all 0.3s ease-in;
+  font-family: "Assistant", "Arial", sans-serif;
 }
 
 input,
