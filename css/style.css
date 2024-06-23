@@ -3407,19 +3407,80 @@ button:focus {
   width: 100%;
 }
 
-.form-stile1 .container .form-item label {
+.form-stile1 .container .form-item label,
+.form-stile1 .container .form-item .label {
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
   padding-bottom: 5px;
+  margin: 0;
 }
 
 .form-stile1 .container .form-item input,
-.form-stile1 .container .form-item select {
+.form-stile1 .container .form-item select,
+.form-stile1 .container .form-item textarea {
   height: 41px;
   width: 100%;
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+.form-stile1 .container .form-item.file-upload {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 41px;
+}
+
+.form-stile1 .container .form-item.file-upload .file-upload__label {
+  display: block;
+  box-sizing: border-box;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 6px;
+  height: 41px;
+  width: 100%;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #ffffff;
+  font-family: inherit;
+}
+
+.form-stile1 .container .form-item.file-upload .file-upload__label .upload__label {
+  font-size: 20px;
+  color: #1b2c64;
+  padding-top: 5px;
+}
+
+.form-stile1 .container .form-item.file-upload .file-upload__label .upload__label .path {
+  white-space: nowrap;
+  width: 240px;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .form-stile1 .container .form-item.file-upload .file-upload__label .upload__label .path {
+    width: 100%;
+  }
+}
+
+.form-stile1 .container .form-item.file-upload .file-upload__label:hover, .form-stile1 .container .form-item.file-upload .file-upload__label:focus {
+  background-color: #adbdf5;
+  cursor: pointer;
+}
+
+.form-stile1 .container .form-item.file-upload .file-upload__input {
+  position: relative;
+  left: 0;
+  top: -50px;
+  right: 0;
+  bottom: 0;
+  font-size: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0;
 }
 
 .form-stile1 .container .btns-wrap {

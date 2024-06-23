@@ -93,23 +93,34 @@
                 <legend>upload files</legend>
                 <div class="container">
                   <div class="form-item display-flex">
-                    <label for="uname">Username</label>
+                    <label for="files-name">Files name</label>
                     <input
-                      id="uname"
-                      name="uname"
+                      id="files-name"
+                      name="files-name"
                       type="text"
-                      placeholder="Enter Username"
+                      placeholder="Enter files name"
                       required
                     />
                   </div>
                   <div class="form-item display-flex">
-                    <label for="psw">Password</label>
+                    <label for="files-description">Files description</label>
+                    <textarea
+                      name="files-description"
+                      placeholder="Enter Description..."
+                    ></textarea>
+                  </div>
+
+                  <div class="form-item display-flex file-upload">
+                    <p class="label">Upload file</p>
+                    <label class="file-upload__label" for="file-upload"
+                      ><span class="upload__label labelName">
+                        <span class="path">Choose file</span>
+                        </label>
                     <input
-                      id="psw"
-                      name="psw"
-                      type="password"
-                      placeholder="Enter Password"
-                      required=""
+                      id="file-upload"
+                      class="file-upload__input"
+                      type="file"
+                      name="file"
                     />
                   </div>
                   <div class="btns-wrap">

@@ -307,19 +307,79 @@ button {
         width: 100%;
       }
 
-      label {
+      label,
+      .label {
         font-size: 20px;
         line-height: 25px;
         font-weight: 400;
         padding-bottom: 5px;
+        margin: 0;
       }
 
       input,
-      select {
+      select,
+      textarea {
         height: 41px;
         width: 100%;
         margin-bottom: 10px;
         font-size: 20px;
+      }
+
+      &.file-upload {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        height: 41px;
+
+        .file-upload__label {
+          display: block;
+          box-sizing: border-box;
+          padding-right: 6px;
+          padding-left: 6px;
+          padding-top: 6px;
+          height: 41px;
+          width: 100%;
+          border: 1px solid #b7b7b7;
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: 400;
+          background-color: #ffffff;
+          font-family: inherit;
+
+          .upload__label {
+            font-size: 20px;
+            color: #1b2c64;
+            padding-top: 5px;
+
+            .path {
+              white-space: nowrap;
+              width: 240px;
+              overflow: hidden;
+
+              @media (max-width: 1100px) {
+                width: 100%;
+              }
+            }
+          }
+
+          &:hover,
+          &:focus {
+            background-color: #adbdf5;
+            cursor: pointer;
+          }
+        }
+
+        .file-upload__input {
+          position: relative;
+          left: 0;
+          top: -50px;
+          right: 0;
+          bottom: 0;
+          font-size: 0;
+          width: 0;
+          height: 100%;
+          opacity: 0;
+        }
       }
     }
 
