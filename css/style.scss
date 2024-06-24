@@ -839,6 +839,15 @@ header {
     padding-bottom: 30px;
     text-transform: uppercase;
 
+    &.pb40 {
+      padding-bottom: 40px;
+      @media (max-width: 1024px) {
+        padding-bottom: 25px;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+
     @media (max-width: 1024px) {
       font-size: 40px;
       line-height: 45px;

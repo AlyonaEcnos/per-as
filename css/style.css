@@ -3976,6 +3976,18 @@ header.floating {
   text-transform: uppercase;
 }
 
+.section h2.pb40 {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .section h2.pb40 {
+    padding-bottom: 25px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
 @media (max-width: 1024px) {
   .section h2 {
     font-size: 40px;
