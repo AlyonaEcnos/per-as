@@ -3145,6 +3145,20 @@ a:focus {
   color: #000000;
 }
 
+a.text-style {
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+a.text-style:hover, a.text-style:focus {
+  text-decoration: underline;
+}
+
 a,
 button,
 input,
@@ -3487,6 +3501,21 @@ button:focus {
   justify-content: flex-start;
 }
 
+.form-stile1 .container.form-inner label {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.form-stile1 .container.form-inner input {
+  height: 41px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
 .form-stile1.mr50 {
   margin-right: 50px;
 }
@@ -3502,6 +3531,18 @@ p {
   margin: 0px 0px 9px 0px;
   line-height: 26px;
   font-weight: 300;
+}
+
+p.fz20 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  p.fz20.med-center {
+    text-align: center;
+  }
 }
 
 h1,
@@ -3976,18 +4017,6 @@ header.floating {
   text-transform: uppercase;
 }
 
-.section h2.pb40 {
-  padding-bottom: 40px;
-}
-
-@media (max-width: 1024px) {
-  .section h2.pb40 {
-    padding-bottom: 25px;
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
-
 @media (max-width: 1024px) {
   .section h2 {
     font-size: 40px;
@@ -4000,6 +4029,33 @@ header.floating {
   .section h2 {
     font-size: 25px;
     line-height: 30px;
+  }
+}
+
+.section h2.pb40 {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .section h2.pb40 {
+    padding-bottom: 25px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.section h2.h2-smaller {
+  text-align: left;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .section h2.med-center {
+    text-align: center;
   }
 }
 
@@ -4132,6 +4188,16 @@ header.floating {
   .section-register .cont-wrap {
     min-width: unset;
     width: 100%;
+  }
+}
+
+.section-register .cont-wrap.mr50 {
+  margin-right: 50px;
+}
+
+@media (max-width: 1279px) {
+  .section-register .cont-wrap.mr50 {
+    margin-right: 0px;
   }
 }
 
