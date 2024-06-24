@@ -3329,7 +3329,7 @@ button:focus {
   height: 40px;
   transition: all 0.3s ease;
   opacity: 1;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .table-btns-wrap .table-btn:hover, .table-btns-wrap .table-btn:focus {
@@ -3579,6 +3579,10 @@ img {
 
 .display-flex.flex-start {
   align-items: flex-start;
+}
+
+.display-flex.justify-start {
+  justify-content: flex-start;
 }
 
 .for-screnReader {
@@ -4245,6 +4249,12 @@ header.floating {
   padding-bottom: 150px;
 }
 
+@media (max-width: 1024px) {
+  .section-table.section-files {
+    padding: 40px 0px;
+  }
+}
+
 @media (max-width: 800px) {
   .section-table.section-files {
     padding-bottom: 150px;
@@ -4257,13 +4267,51 @@ header.floating {
 }
 
 .section-table.section-files .section-wrap .files-wrap .files-iner .file-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   max-width: 23%;
+  min-width: 23%;
   margin-right: 10px;
   margin-bottom: 50px;
 }
 
+@media (max-width: 1279px) {
+  .section-table.section-files .section-wrap .files-wrap .files-iner .file-box {
+    max-width: 32%;
+    min-width: 32%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-table.section-files .section-wrap .files-wrap .files-iner .file-box {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .section-table.section-files .section-wrap .files-wrap .files-iner .file-box:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
 .section-table.section-files .section-wrap .files-wrap .files-iner .file-box:nth-child(4n) {
   margin-right: 0px;
+}
+
+@media (max-width: 1279px) {
+  .section-table.section-files .section-wrap .files-wrap .files-iner .file-box:nth-child(4n) {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-table.section-files .section-wrap .files-wrap .files-iner .file-box:nth-child(4n) {
+    margin-right: 0px;
+  }
 }
 
 .section-table.section-files .section-wrap .files-wrap .files-iner .file-box .img-wrap {
@@ -4290,6 +4338,7 @@ header.floating {
 
 .section-table.section-files .section-wrap .files-wrap .files-iner .file-box .btns-wrap {
   padding-top: 10px;
+  width: 100%;
 }
 
 .section-table.section-files .section-wrap .files-wrap .files-iner .file-box .btns-wrap button {
