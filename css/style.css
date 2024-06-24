@@ -4380,7 +4380,7 @@ header.floating {
 }
 
 .section-table.section-news .section-wrap .news-wrap .news-iner {
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -4392,6 +4392,7 @@ header.floating {
   justify-content: center;
   max-width: 23%;
   min-width: 23%;
+  height: 100%;
   margin-right: 33px;
   margin-bottom: 50px;
 }
@@ -4441,6 +4442,11 @@ header.floating {
   height: 29vh;
   overflow: hidden;
   width: 100%;
+  background-color: #1b2c64;
+  background-image: url(../images/news/news1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .section-table.section-news .section-wrap .news-wrap .news-iner .news-box .img-wrap img {
@@ -4451,6 +4457,19 @@ header.floating {
 
 .section-table.section-news .section-wrap .news-wrap .news-iner .news-box p {
   width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+  min-height: 4.5em;
+}
+
+@media (max-width: 900px) {
+  .section-table.section-news .section-wrap .news-wrap .news-iner .news-box p {
+    min-height: unset;
+  }
 }
 
 .section-table.section-news .section-wrap .news-wrap .news-iner .news-box .btns-wrap {
